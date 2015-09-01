@@ -5,7 +5,8 @@
 
 -Heed the post-install notes. There may be something like: 
   "To have launchd start postgresql at login:"
+  <blockquote>
         ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-
+  </blockquote>
 
 
