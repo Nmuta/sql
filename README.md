@@ -12,7 +12,7 @@
 -Then to load postgresql now:
   <blockquote>
     launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-  <blockquote>
+  </blockquote>
   
 But most importantly, you should run : 
 
