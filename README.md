@@ -9,4 +9,10 @@
         ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
   </blockquote>
 
+-Then to load postgresql now:
+  <blockquote>
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+  <blockquote>
+  
+  
 
