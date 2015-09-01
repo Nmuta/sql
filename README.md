@@ -1,2 +1,8 @@
-# sql
-SQL startup
+# Getting Started with SQL
+
+### Install postgres : 
+brew install postgres
+
+
+
+
