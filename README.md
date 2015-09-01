@@ -14,5 +14,11 @@
     launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
   <blockquote>
   
-  
+But most importantly, you should run : 
+
+<blockquote>
+ postgres -D /usr/local/var/postgres
+</blockquote>
+
+Running brew info postgres can help you see what your options are after the setup screens are gone. 
 
