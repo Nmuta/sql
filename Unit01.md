@@ -132,27 +132,45 @@ Here are some ways that we can do CRUD in SQL :
 
 ###Insert
 <blockquote>
-INSERT into tbl values('fred', 'scott', 'denver', 'colorado'); 
-INSERT into tbl ('name', 'city') values ('fred', 'denver');
+  INSERT into tbl values('fred', 'scott', 'denver', 'colorado'); 
+<blockquote>
+<blockquote>
+  INSERT into tbl ('name', 'city') values ('fred', 'denver');
 </blockquote>
 
-- Select
-SELECT * from tbl; 
-
+##Select
+<blockquote>
+  SELECT * from tbl; 
+</blockquote>
+<blockquote>
 SELECT * from tbl WHERE column_name  = ‘desired_value’ ; 
+</blockquote>
+<blockquote>
 SELECT name from tbl where weight = (select max(weight) from tbl)
+</blockquote>
+<blockquote>
 SELECT name from products where price > 5.00 
+</blockquote>
 
-- Update
-UPDATE televisions SET cost=5000, discount='20' WHERE id=25;
 
-- Delete
-DELETE from country WHERE code='SSD' ; 
+##Update
+<blockquote>
+  UPDATE televisions SET cost=5000, discount='20' WHERE id=25;
+</blockquote>
 
-- JOIN
-SELECT customer.name from customers INNER JOIN purchases ON purchases.customer_id = customer.id
+##Delete
+<blockquote>
+  DELETE from country WHERE code='SSD' ; 
+</blockquote>
+
+##JOIN
+<blockquote>
+  SELECT customer.name from customers INNER JOIN purchases ON purchases.customer_id = customer.id
+</blockquote>
+<blockquote>
 SELECT customer.tag as customer_tag, purchase.tag as purchase_tag from customers INNER JOIN purchases ON purchases.customer_id = customer.id
-
+</blockquote>
+More info on joins can be found in Unit02
 
 - CREATING A NEW TABLE 
 CREATE TABLE Persons
