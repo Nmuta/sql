@@ -133,7 +133,7 @@ Here are some ways that we can do CRUD in SQL :
 ###Insert
 <blockquote>
   INSERT into tbl values('fred', 'scott', 'denver', 'colorado'); 
-<blockquote>
+</blockquote>
 <blockquote>
   INSERT into tbl ('name', 'city') values ('fred', 'denver');
 </blockquote>
@@ -171,7 +171,7 @@ SELECT name from products where price > 5.00
 SELECT customer.tag as customer_tag, purchase.tag as purchase_tag from customers INNER JOIN purchases ON purchases.customer_id = customer.id
 </blockquote>
 More info on joins can be found in Unit02
-
+<blockquote>
 - CREATING A NEW TABLE 
 CREATE TABLE Persons
 (
@@ -181,6 +181,7 @@ FirstName varchar(255),
 Address varchar(255),
 City varchar(255)
 );
+</blockquote>
 
 
 
