@@ -41,7 +41,8 @@ You should now see a command prompt.:
 
 In the terminal now, we can see the defaults that ship with postgres, but we don't have any user created databases yet. 
 
-### list databases: \l
+### list databases: 
+\l
 (backslash and then the letter “l” as in lemon
 
 Use the above command to list the current databases. 
