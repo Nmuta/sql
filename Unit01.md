@@ -85,7 +85,10 @@ We can import a database from the standard bash window.
 Navigate to where world.sql is stored ( it should be in the repo you cloned). 
 
 ### import a database (outside of the psql command prompt, from terminal ) : 
+<blockquote>
+// from bash, not the psql cli 
 psql mydatabase < world.sql
+</blockquote>
 
 OR 
 psql mydatabase < ~/path/to/file/world.sql  ( if you're in a different directory) . 
