@@ -131,9 +131,10 @@ Here are some ways that we can do CRUD in SQL :
 ##QUERIES: 
 
 ###Insert
-
+<blockquote>
 INSERT into tbl values('fred', 'scott', 'denver', 'colorado'); 
 INSERT into tbl ('name', 'city') values ('fred', 'denver');
+</blockquote>
 
 - Select
 SELECT * from tbl; 
