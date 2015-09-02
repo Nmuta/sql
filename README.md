@@ -115,6 +115,7 @@ INSERT into tbl ('name', 'city') values ('fred', 'denver');
 
 - Select
 SELECT * from tbl; 
+
 SELECT * from tbl WHERE column_name  = ‘desired_value’ ; 
 SELECT name from tbl where weight = (select max(weight) from tbl)
 SELECT name from products where price > 5.00 
