@@ -48,7 +48,9 @@ You should now see a command prompt.:
 In the terminal now, we can see the defaults that ship with postgres, but we don't have any user created databases yet. 
 
 ### list databases: 
-\l
+<blockquote>
+  \l
+</blockquote>
 (backslash and then the letter “l” as in lemon)
 
 Use the above command to list the current databases. 
@@ -56,7 +58,9 @@ Use the above command to list the current databases.
 Now , create a new database with the command below: 
 
 ### create database: 
-CREATE DATABASE mydatabase; 
+<blockquote>
+  CREATE DATABASE mydatabase; 
+</blockquote>
 
 Now list your databases again, and you should see the database that you created. 
 
@@ -126,7 +130,7 @@ Here are some ways that we can do CRUD in SQL :
 
 ##QUERIES: 
 
-- Insert
+###Insert
 
 INSERT into tbl values('fred', 'scott', 'denver', 'colorado'); 
 INSERT into tbl ('name', 'city') values ('fred', 'denver');
