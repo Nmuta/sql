@@ -25,11 +25,13 @@ Running brew info postgres can help you see what your options are after the setu
 
 Now Postgres should be running.  
 You can check to see whether or not psql is running by looking at all system processes related to postgres: 
+<blockquote>
         ps aux | grep postgres
+</blockquote>
 
--nmuta           34650   0.0  0.0  2463676   3260 s003  S+    7:37AM   0:00.01 psql postgres
--nmuta           30961   0.0  0.0  2455484   3276 s002  S+    6:26AM   0:00.01 psql postgres
--nmuta           35738   0.0  0.0  2432772    652 s004  S+    8:38AM   0:00.00 grep --color=auto psql
+- nmuta           34650   0.0  0.0  2463676   3260 s003  S+    7:37AM   0:00.01 psql postgres
+- nmuta           30961   0.0  0.0  2455484   3276 s002  S+    6:26AM   0:00.01 psql postgres
+- nmuta           35738   0.0  0.0  2432772    652 s004  S+    8:38AM   0:00.00 grep --color=auto psql
 
 notice that the last matching "process" is actually the search we just did, so ruling that one out, we have two matching processes.  
 
