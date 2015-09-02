@@ -36,16 +36,20 @@ You can check to see whether or not psql is running by looking at all system pro
 notice that the last matching "process" is actually the search we just did, so ruling that one out, we have two matching processes.  
 
 To get into the psql terminal as the default user, type: 
-        psql postgres 
+<blockquote>
+      psql postgres 
+</blockquote>
 
 You should now see a command prompt.: 
+<blockquote>
         postgres=# 
+</blockquote>
 
 In the terminal now, we can see the defaults that ship with postgres, but we don't have any user created databases yet. 
 
 ### list databases: 
 \l
-(backslash and then the letter “l” as in lemon
+(backslash and then the letter “l” as in lemon)
 
 Use the above command to list the current databases. 
 
@@ -59,7 +63,7 @@ Now list your databases again, and you should see the database that you created.
 Once we've created a database, even if its empty, we have to "connect" to it in order to do queries: 
 
 ### connect to a database: 
-\c mydatabase; 
+\c mydatabase 
 
 
 Even though we don't want to drop the database yet, later we can drop it with this command: 
@@ -69,11 +73,12 @@ DROP DATABASE demodb1;
 
 ## Importing a Database
 
-To exit the postgres cli ( command line interface) , do \q ; 
+To exit the postgres cli ( command line interface) , do
+\q
 
 We can import a database from the standard bash window. 
 
-Navigate to where world.sql is stored ( should be in the repo you cloned). 
+Navigate to where world.sql is stored ( it should be in the repo you cloned). 
 
 ### import a database (outside of the psql command prompt, from terminal ) : 
 psql mydatabase < world.sql
@@ -81,30 +86,41 @@ psql mydatabase < world.sql
 OR 
 psql mydatabase < ~/path/to/file/world.sql  ( if you're in a different directory) . 
 
-
-Although we will not be using it now, we can also dump from terminal:
-### dump (export) a database: (outside of the psql command prompt, from terminal ) : 
+### dump (export) a database: (outside of the psql command prompt, from terminal ) :
+Although we will not be using it now, we can also dump from the terminal:
 pg_dump mydatabase > new_file_name.sql
 
 
 Ok, so now we can go back into the terminal and view our data. 
+<blockquote>
         psql postgres
+</blockquote>
 
 
-### describe tables: 
-\dt;
+### connect to the database we want: 
+<blockquote>
+    \c world
+</blockquote>
+
+### describe tables:
+<blockquote>
+    \dt 
+</blockquote>
 
 ### describe one table:
-\d tablename; 
+<blockquote>
+    \d country
+</blockquote>
 
 
 Now , we are ready to start doing some queries. 
+All of these queries can be run in the psql cli. 
+However, the cli is not a great tool when it comes to viewing large tables or large amounts of data. 
 
-
-Before we continue, install PGCommander. 
-
+To do this, we can install a gui tool. For this lesson, we will use PGCommander. 
 PGCommander is useful because not only is it cleaner than using the psql cli, it allows you to export and save queries. 
-
+We will use PGCommander for you to email saved queries to the instructor. 
+<br>
 
 Here are some ways that we can do CRUD in SQL : 
 
