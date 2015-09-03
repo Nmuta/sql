@@ -222,9 +222,21 @@ When you have finished doing the join query, export that query and then email me
 
 Delete Atlantis from the country table
 
-Copy data into PSQL from a text file: COPY drivers FROM '/Users/nmuta/Documents/drivers.csv' DELIMITER ',' CSV;
 
 
+----------------
+CREATE TABLE drivers ( id  int,  name varchar(255), motorcycle_id int );
+
+CREATE TABLE motorcycles ( id int, name varchar(255),  garage_id int,  driver_id int);
+
+CREATE TABLE garage ( id int, name varchar(255), zone_id int);
+
+CREATE TABLE zone ( id int, name varchar(255) );
+
+-----------
+optional : 
+
+COPY drivers FROM '/Users/nmuta/Documents/drivers.csv' DELIMITER ',' CSV;
 
 
 
