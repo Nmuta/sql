@@ -1,4 +1,4 @@
-# Putting it all together
+### Putting it all together
 
 Using the Dellstore2 database, complete the following queries based on requests from the CEO at your company. 
 Items in *italics* are to be included in an aggregate email of all of your responses to the instructor. 
