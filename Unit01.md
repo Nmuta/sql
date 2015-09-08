@@ -118,6 +118,12 @@ Ok, so now we can go back into the terminal and view our data.
     \d country
 </blockquote>
 
+### alter a table:
+ALTER TABLE foo ADD COLUMN id;
+
+### alter a table with an auto-incrementing 
+ALTER TABLE foo ADD COLUMN id SERIAL;
+
 
 Now , we are ready to start doing some queries. 
 All of these queries can be run in the psql cli. 
