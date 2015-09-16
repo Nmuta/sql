@@ -22,6 +22,11 @@ But most importantly, you should run :
 
 Running brew info postgres can help you see what your options are after the setup screens are gone. 
 
+### If your postgres connection ever dies or goes bad, you can restart postgres with this command: 
+<blockquote>
+  pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+</blockquote>
+
 
 Now Postgres should be running.  
 You can check to see whether or not psql is running by looking at all system processes related to postgres: 
