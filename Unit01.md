@@ -40,6 +40,10 @@ You can check to see whether or not psql is running by looking at all system pro
 
 notice that the last matching "process" is actually the search we just did, so ruling that one out, we have two matching processes.  
 
+Every once in a while, you may get this error is there are version mismatches: 
+http://blog.10ninox.com/2015/01/psql-database-incompatible/
+
+
 To get into the psql terminal as the default user, type: 
 <blockquote>
       psql postgres 
