@@ -54,6 +54,8 @@ You should now see a command prompt.:
         postgres=# 
 </blockquote>
 
+🐘
+
 In the terminal now, we can see the defaults that ship with postgres, but we don't have any user created databases yet. 
 
 ### list databases: 
