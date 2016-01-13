@@ -22,6 +22,11 @@ But most importantly, you should run :
 
 Running brew info postgres can help you see what your options are after the setup screens are gone. 
 
+### If your postgres connection ever dies or goes bad, you can restart postgres with this command: 
+<blockquote>
+  pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+</blockquote>
+
 
 Now Postgres should be running.  
 You can check to see whether or not psql is running by looking at all system processes related to postgres: 
@@ -35,6 +40,10 @@ You can check to see whether or not psql is running by looking at all system pro
 
 notice that the last matching "process" is actually the search we just did, so ruling that one out, we have two matching processes.  
 
+Every once in a while, you may get this error is there are version mismatches: 
+http://blog.10ninox.com/2015/01/psql-database-incompatible/
+
+
 To get into the psql terminal as the default user, type: 
 <blockquote>
       psql postgres 
@@ -44,6 +53,9 @@ You should now see a command prompt.:
 <blockquote>
         postgres=# 
 </blockquote>
+
+🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘🐘first milestone.
+
 
 In the terminal now, we can see the defaults that ship with postgres, but we don't have any user created databases yet. 
 
@@ -117,6 +129,12 @@ Ok, so now we can go back into the terminal and view our data.
 <blockquote>
     \d country
 </blockquote>
+
+### alter a table:
+ALTER TABLE foo ADD COLUMN id;
+
+### alter a table with an auto-incrementing column 
+ALTER TABLE foo ADD COLUMN id SERIAL;
 
 
 Now , we are ready to start doing some queries. 
