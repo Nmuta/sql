@@ -29,7 +29,7 @@ Running brew info postgres can help you see what your options are after the setu
 
 sometimes if you get a stale postgres session, you can delete your postmaster.pid file: 
 ```
-/usr/local/var/postgres
+rm /usr/local/var/postgres/postmaster.pid
 
 ```
 
