@@ -243,14 +243,11 @@ Select the country wtih the highest gross national product
 
 Select all of the countries and their capitals in one query 
 
-Going back to your Mongo associations assignment, create some tables and then do a join to join one or more tables. 
-
-When you have finished doing the join query, export that query and then email me the query 
-
 Delete Atlantis from the country table
 
 
 
+TABLE CREATION EXAMPLES: 
 ----------------
 CREATE TABLE drivers ( id  int,  name varchar(255), motorcycle_id int );
 
@@ -259,6 +256,8 @@ CREATE TABLE motorcycles ( id int, name varchar(255),  garage_id int,  driver_id
 CREATE TABLE garage ( id int, name varchar(255), zone_id int);
 
 CREATE TABLE zone ( id int, name varchar(255) );
+
+CREATE TABLE users (id SERIAL, name TEXT, age INT);
 
 -----------
 optional : 
