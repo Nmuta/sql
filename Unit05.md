@@ -11,6 +11,7 @@ Items in *italics* are to be included in an aggregate email of all of your respo
 
 
 3 => Get me a list of how many orders have been placed by Sam Williams.
+(There are multiple people named Sam Williams; just pretend it's all the same person). 
 *How many total orders Have been placed?*
 
 *When was Sam Williams most active ?* 
