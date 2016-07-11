@@ -249,15 +249,14 @@ Delete Atlantis from the country table
 
 TABLE CREATION EXAMPLES: 
 ----------------
-CREATE TABLE drivers ( id  int,  name varchar(255), motorcycle_id int );
+CREATE TABLE drivers ( id  SERIAL,  name varchar(255) );
 
-CREATE TABLE motorcycles ( id int, name varchar(255),  garage_id int,  driver_id int);
+CREATE TABLE bikes ( id SERIAL, name varchar(255),  garage_id int,  driver_id int);
 
-CREATE TABLE garage ( id int, name varchar(255), zone_id int);
+CREATE TABLE garages ( id SERIAL, name varchar(255), zone_id int);
 
-CREATE TABLE zone ( id int, name varchar(255) );
+CREATE TABLE zones ( id SERIAL, name varchar(255) );
 
-CREATE TABLE users (id SERIAL, name TEXT, age INT);
 
 -----------
 optional : 
