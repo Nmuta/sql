@@ -164,7 +164,7 @@ Here are some ways that we can do CRUD in SQL :
   INSERT into tbl values('fred', 'scott', 'denver', 'colorado'); 
 </blockquote>
 <blockquote>
-  INSERT into tbl ('name', 'city') values ('fred', 'denver');
+  INSERT into tbl (name, city) values ('fred', 'denver');
 </blockquote>
 
 ##Select
