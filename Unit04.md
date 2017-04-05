@@ -23,5 +23,9 @@ MIN() - Returns the smallest value.
 SUM() - Returns the sum
 
 
+-----
+GROUP BY is a way to group results into sets.  It's typically used in conjunction with aggregate functions 
+http://www.postgresqltutorial.com/postgresql-group-by/
+
 
 
