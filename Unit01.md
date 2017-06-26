@@ -137,7 +137,7 @@ Ok, so now we can go back into the terminal and view our data.
 </blockquote>
 
 ### alter a table:
-ALTER TABLE foo ADD COLUMN id;
+ALTER TABLE foo ADD COLUMN id serial;
 
 ### create a database table with an auto-incrementer: 
 CREATE TABLE users (id SERIAL, name TEXT, age INT);
