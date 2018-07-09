@@ -32,6 +32,11 @@ sometimes if you get a stale postgres session, you can delete your postmaster.pi
 rm /usr/local/var/postgres/postmaster.pid
 
 ```
+In certain situations , you may need to updgrade postgres. This article shows how to update Postgres from 9.6.5 to 10.0 
+```
+https://gist.github.com/giannisp/ebaca117ac9e44231421f04e7796d5ca
+
+```
 
 
 Now Postgres should be running.  
