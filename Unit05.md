@@ -1,54 +1,19 @@
-### Putting it all together
+### Understanding Joins
 
-Using the Dellstore2 database, complete the following queries based on requests from the CEO at your company. 
-Items in *italics* are to be included in an aggregate email of all of your responses to the instructor. 
-
-1 => "Get me a list of all of our products with above average sales". 
-*Send me the number of items in this list.*
+Please feel free to reference the Venn diagrams in [Unit 2](/Unit02.md) to visualize what's happening with joins.
 
 
-2 => Based on the first list, *tell me the top 3 selling titles*.
+*The most important thing to know and remember about joins is that joins are specifically for getting information that is shared across one or more tables, characterized by a complex relationship between data*
 
+Joins are NOT NEEDED when retrieving data from "one to many" relationship.
 
-3 => Get me a list of how many orders have been placed by Sam Williams.
-(There are multiple people named Sam Williams; just pretend it's all the same person). 
-*How many total orders Have been placed?*
+Example:  _A child has many toys_.  This is a one to many relationship.  A database query for this would simply be
 
-*When was Sam Williams most active ?* 
+```
+select * from toys where child_id=5;
 
-(When did he place his orders) ? 
+```
 
-4 => What are the two cheapest PINOCCHIO movies? (PINOCCHIO is the second part of the title of many of our movies).
+That's it.  That's a simple one to many relationship.  You would somehow first identified that the child_id needed for this toy retrieval is '5'.
 
-*send me the names and prices of the two cheapest PINOCCHIO movies*
-
-*send me the PINOCCHIO query so I can re-use it later*
-
-
-
-
- 5 => Add an auto-incrementing 'id' column to the "reorder" table, then populate that table
-with two or three lines of data. Remember that when you add rows to an auto-incrementing table, 
-you don't have to include 'id' as one of the columns to populate. It should do it for you. 
-In postgres,  SERIAL is the equivalent to auto-increment. 
-(Hint: syntax for this is back on Unit01.md) 
-
-
-Question:  if you delete the final record of an auto-incrementing table, and that final record's auto-incremented 
-value (id) was 9, what will be the the value of the next record inserted into the table?  In other words, delete 9, 
-and what will the next record be? 
-
-*send me the answer to this question*
-
-Email all of your answers **IN ONE EMAIL** to complete this assignment. 
-
-
-
-
-
-
-
-
-
-
-
+The next step is just querying the database for all of the toys with a child_id of "5".   It's not a join, it's a simple query.
