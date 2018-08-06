@@ -1,54 +1,27 @@
-### Putting it all together
+### Writing Queries against a simple database
 
-Using the Dellstore2 database, complete the following queries based on requests from the CEO at your company. 
-Items in *italics* are to be included in an aggregate email of all of your responses to the instructor. 
+Inside of this repo, there is a database called *marketplace.sql*
 
-1 => "Get me a list of all of our products with above average sales". 
-*Send me the number of items in this list.*
+Take a minute, inside of your code editor, to look at the marketplace.sql file.  A good amount of the file reads like English.
 
+Read through the file. What does it look like this file is for ? What is it doing ?
 
-2 => Based on the first list, *tell me the top 3 selling titles*.
+This file is called a "database dump". It was exported from a database.
 
+One of the great things about psql (and SQL in general) is that its very easy to import database dumps.
 
-3 => Get me a list of how many orders have been placed by Sam Williams.
-(There are multiple people named Sam Williams; just pretend it's all the same person). 
-*How many total orders Have been placed?*
+First, in your terminal (not the postgres CLI, just your normal terminal), create the database that we will import this data into:
 
-*When was Sam Williams most active ?* 
+```
+createdb marketplace
 
-(When did he place his orders) ? 
+```
 
-4 => What are the two cheapest PINOCCHIO movies? (PINOCCHIO is the second part of the title of many of our movies).
-
-*send me the names and prices of the two cheapest PINOCCHIO movies*
-
-*send me the PINOCCHIO query so I can re-use it later*
+then, import the dump into that database:
 
 
+```
+psql marketplace < marketplace.sql
 
-
- 5 => Add an auto-incrementing 'id' column to the "reorder" table, then populate that table
-with two or three lines of data. Remember that when you add rows to an auto-incrementing table, 
-you don't have to include 'id' as one of the columns to populate. It should do it for you. 
-In postgres,  SERIAL is the equivalent to auto-increment. 
-(Hint: syntax for this is back on Unit01.md) 
-
-
-Question:  if you delete the final record of an auto-incrementing table, and that final record's auto-incremented 
-value (id) was 9, what will be the the value of the next record inserted into the table?  In other words, delete 9, 
-and what will the next record be? 
-
-*send me the answer to this question*
-
-Email all of your answers **IN ONE EMAIL** to complete this assignment. 
-
-
-
-
-
-
-
-
-
-
-
+```
+remember that you must be in the directory where the marketplace.sql file resides in order for this command to work.  Otherwise, you would have to put the full path to the marketplace.sql file in the last part of the statement above. 
