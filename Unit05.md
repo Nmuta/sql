@@ -51,8 +51,6 @@ Let's say you have the following database tables:
 *A JOIN TABLE* would be needed if you wanted the first and last names of every student owning a Honda.  That data is spread across 3 tables, and the links between these tables are connected through a network of primary and foreign keys that join all of that data together.  Here is the join query that would join all of that data:
 
 
-```
-SELECT students.firstname, students.lastname join vehicles on students.id = vehicles.student_id join car_types on car_types._id = vehicles.car_type_id WHERE vehicles.make LIKE 'Honda%';
-```
+*SELECT students.firstname, students.lastname join vehicles on students.id = vehicles.student_id join car_types on car_types._id = vehicles.car_type_id WHERE vehicles.make LIKE 'Honda%';*
 
 It may sound like a mouthful, but once you get the rhythm of joins, it's fairly intuitive.  See [Unit 3](Unit03.md) "The Building of a Query" to build up to doing joins by examining the syntax of joins by seeing how joins are just a natural progression of SELECT syntax with extra conditions added on top.
