@@ -37,7 +37,10 @@ In certain situations , you may need to updgrade postgres. This article shows ho
 https://gist.github.com/giannisp/ebaca117ac9e44231421f04e7796d5ca
 
 ```
-
+### NOTE: 
+```
+Sometimes if none of the above work in resetting a bad installation on Mac, you can go to /usr/local/var and remove all of the postgres folders or any folder with the name 'postgres' in it.  Then do either brew reinstall postgresql or brew install postgresql to get a clean installation. 
+```
 
 Now Postgres should be running.  
 You can check to see whether or not psql is running by looking at all system processes related to postgres: 
